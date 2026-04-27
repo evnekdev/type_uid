@@ -5,9 +5,14 @@ edition = "2021"
 license = "MIT"
 author = "Evgenii Nekhoroshev evgnekhoroshev@gmail.com"
 repository = "https://github.com/evnekdev/type_uid"
-description = "This crate defines a `TypUid` macro which can be applied to any Rust structure to generate a unique identifier which depends only on the struct contents and its type"
-keywords = []
-categories = []
+description = "A procedural macro to generate stable type-based unique identifiers (fingerprints) for Rust structs, useful for serialization compatibility and versioning."
+keywords = ["procedural-macro", "serialization", "hashing", "typeid", "fingerprint"]
+categories = [
+    "development-tools::procedural-macro-helpers",
+    "encoding",
+    "algorithms",
+    "data-structures"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
