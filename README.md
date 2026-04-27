@@ -1,6 +1,6 @@
 # type_uid
 
-This crate defines a `TypUid` macro which can be applied to any Rust structure to generate a unique identifier which depends on the struct contents. It is useful when creating a serialization/deserialization pipeline, especially using binary formats. During project development, when a type can be modified, it is useful to stamp the serialized data to avoid deserialization errors.
+This crate defines a `TypUid` macro which can be applied to any Rust structure to generate a unique identifier which depends only on the struct contents and its type. It is useful when creating a serialization/deserialization pipeline, especially using binary formats. During project development, when a type can be modified, it is useful to stamp the serialized data to avoid deserialization errors.
 
 ---
 
