@@ -32,6 +32,7 @@ pub fn main(){
 	let type_signature2 = MyStruct2::TYPE_UID;
 	let type_signature3 = MyStruct3::TYPE_UID;
 	
+	// type_signature1 is supposed to be equal to type_signature2, and type_signature3 is different
 	println!("type_signature1 = {:?}, type_signature2 = {:?}, type_signature3 = {:?}", &type_signature1, &type_signature2, &type_signature3);
 }
 
