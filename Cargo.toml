@@ -1,0 +1,21 @@
+[package]
+name = "type_uid"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+author = "Evgenii Nekhoroshev evgnekhoroshev@gmail.com"
+repository = "https://github.com/evnekdev/type_uid"
+description = "This crate defines a `TypUid` macro which can be applied to any Rust structure to generate a unique identifier which depends only on the struct contents and its type"
+keywords = []
+categories = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full", "extra-traits"] }
+quote = "1"
+proc-macro2 = "1"
+blake3 = "1"
