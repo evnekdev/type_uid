@@ -127,7 +127,7 @@ fn collect_repr_attrs(attrs: &[Attribute]) -> Vec<String> {
 }
 
 fn build_structure_signature_with_generics(
-    name: &Ident,
+    _name: &Ident,
     generics: &syn::Generics,
     reprs: &[String],
     ds: &DataStruct,
